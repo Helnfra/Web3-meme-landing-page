@@ -10,26 +10,26 @@
 <body>
     <section>
         <header>
-            <!-- <div class="header"> -->
                 <div class="logo">
                     <a href="#">
                         <img src="./image/logo2-removebg-preview.png" alt="Baby Kitten Logo">
                     </a>
-                    <nav>
-                        <a href="#home">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#tokenomics">Tokenomics</a>
-                        <a href="#roadmap">Roadmap</a>
-                        <a href="#livechat">Live Chat</a>
-                        <a href="#whitepaper">White Paper</a>
-                        <div class="button1"><a href="#">Buy Now</a></div>
-                                   
-                    </nav> 
-                    
                 </div>
-            <!-- </div> -->
-        </header>
-    
+                <div class="menu-toggle" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#tokenomics">Tokenomics</a>
+                    <a href="#roadmap">Roadmap</a>
+                    <a href="#livechat">Live Chat</a>
+                    <a href="#whitepaper">White Paper</a>
+                    <div class="btn-buy-now"><a href="#">Buy Now</a></div>
+                </nav>
+        </header>   
     </section>
     
     <section id="home">
@@ -179,7 +179,7 @@
     <section id="contact">
         <footer>
             <div class="cimage">
-                <img src="./image/nobackground.png" alt="Kitten">
+                <img src="./image/nobackground.png" alt="Kitten" >
             </div>
             <p>Do you want exceptional service and support to ensure that you and your cat have the best experience possible?</p>
             <div class="iconcontainer">
@@ -197,9 +197,16 @@
         </footer>
     </section>
    
-
-           
-           
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const nav = document.querySelector('nav');
+            
+            menuToggle.addEventListener('click', function() {
+                nav.classList.toggle('active');
+            });
+        });
+    </script> 
     
     
 </body>
