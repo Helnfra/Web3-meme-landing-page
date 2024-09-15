@@ -17,14 +17,20 @@ header {
   justify-content: space-between; 
   align-items: center;
   margin-bottom: 10em;
+  position: fixed; 
+  top: 0; 
+  /* left: 0;  */
+  width: 90%; 
+  z-index: 1000; 
+  
 }
 
-/* Logo Styling */
+
 .logo img {
   height: 50px; 
 }
 
-/* Navigation Styling */
+
 nav {
   display: flex;
   gap: 15px; /* Space between navigation links */
@@ -60,7 +66,7 @@ nav a:hover {
   
 }
 
-/* Menu Toggle for Mobile */
+
 .menu-toggle {
   display: none; /* Hidden by default; will be shown on small screens */
   flex-direction: column;
@@ -471,7 +477,9 @@ span{
       width: 100%;
       height: auto;
     }
-     
+    .column-3 {
+      width: auto;
+     }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -562,10 +570,7 @@ nav a {
   width: 100%;
   height: auto;
 }
-     
-.column-3 {
-  width: auto;
- }
+
 } 
 
 @media (min-width: 769px) {
@@ -643,5 +648,6 @@ nav a {
       width: 50%;
   }
 }
+   
 }
 
