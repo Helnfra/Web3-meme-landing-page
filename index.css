@@ -16,12 +16,13 @@ header {
   display: flex;
   justify-content: space-between; 
   align-items: center;
-  margin-bottom: 10em;
+  /* margin-bottom: 10em; */
   position: fixed; 
   top: 0; 
   /* left: 0;  */
   width: 90%; 
   z-index: 1000; 
+  /* margin-bottom: 20em; */
   
 }
 
@@ -87,7 +88,7 @@ nav a:hover {
 .container {
   display: flex;
   margin: 0 10%;
-  margin-top: 10em;
+  /* margin-top: 10em; */
   gap: 20%;
 }
 
@@ -137,7 +138,9 @@ nav a:hover {
   height: 30px;  
   border: none;
 }   
-
+#home{
+  margin-top: 15em;
+}
 #tokenomics, #roadmap {
   margin-top: 10em;
 }
